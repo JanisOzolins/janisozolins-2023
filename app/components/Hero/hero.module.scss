@@ -1,0 +1,82 @@
+@import "/app/styles/variables.scss";
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.linkedin {
+  position: absolute;
+  top: $unit * 2;
+  left: $unit * 2;
+  fill: #fff;
+  z-index: 3;
+
+  &:hover {
+    fill: #fdc830;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  max-height: 900px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/hero.jpeg");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-position: center center;
+  }
+
+  &__overlay {
+    background-color: #222222;
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  &__content {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+
+    @media (min-width: 1024px) {
+      margin-left: 20vw;
+    }
+  }
+
+  &__title {
+    @include accent-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    line-height: 1;
+    display: block;
+    line-height: 1.1;
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__description {
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+}

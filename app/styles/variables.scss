@@ -1,0 +1,6 @@
+$unit: 8px;
+@mixin accent-gradient {
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f37335, #fdc830);
+  background: linear-gradient(to right, #f37335, #fdc830);
+}
