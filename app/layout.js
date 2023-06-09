@@ -1,10 +1,4 @@
 import "./styles/globals.scss";
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  weight: ["700", "800", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Janis Ozolins | UX Developer",
@@ -14,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
