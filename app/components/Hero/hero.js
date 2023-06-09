@@ -1,11 +1,13 @@
-
-import { Fragment } from 'react';
-import styles from './hero.module.scss'
+import { Fragment } from "react";
+import styles from "./hero.module.scss";
 
 export default function Hero() {
   return (
     <div className={styles.container}>
-      <a className={styles.linkedin} href="https://www.linkedin.com/in/jozolins/">
+      <a
+        className={styles.linkedin}
+        href="https://www.linkedin.com/in/jozolins/"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -16,12 +18,10 @@ export default function Hero() {
         </svg>
       </a>
       <section id="hero" className={styles.hero}>
-        <div className={styles.hero__overlay}></div>
         <div className={styles.hero__content}>
           <span className={styles.hero__title}>
             Frontend Developer with Passion for UX Design
           </span>
-          <br />
           <span className={styles.hero__description}>
             With over 5 years of professional experience developing and scaling
             B2B and B2C applications for large businesses, startups and
