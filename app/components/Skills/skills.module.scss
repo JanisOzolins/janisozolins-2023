@@ -1,0 +1,90 @@
+@import "/app/styles/variables.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 90%;
+  margin: 5rem auto;
+  max-width: 1300px;
+}
+.skills {
+  &__container {
+    display: flex;
+    justify-content: center;
+    background: #252222;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    gap: $unit * 2;
+    padding: 3rem;
+    margin: 0.5rem;
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+    }
+
+    &__one {
+      grid-column: span 12;
+      flex: 1;
+      font-size: 1.3rem;
+      justify-content: center;
+      align-content: center;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        grid-column: span 7;
+      }
+    }
+
+    &__two {
+      grid-column: span 12;
+      align-items: flex-end;
+      flex: 0 0 30%;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        grid-column: span 5;
+      }
+    }
+
+    &__three {
+      grid-column: span 12;
+      grid-row: 2/-1;
+      flex-direction: row;
+      flex: 1;
+      font-size: 1rem;
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  &__pill {
+    display: inline-flex;
+    align-items: center;
+    white-space: break-spaces;
+    text-align: center;
+
+    &__label {
+      font-family: "SFPro";
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #eaeaea;
+    }
+
+    &:nth-child(2n-1) &__label {
+      @include accent-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &:hover &__label {
+      opacity: 1;
+      cursor: default;
+    }
+
+    @media (min-width: 768px) {
+      white-space: nowrap;
+    }
+  }
+}
