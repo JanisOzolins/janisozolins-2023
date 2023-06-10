@@ -1,18 +1,30 @@
 $unit: 8px;
-$dark: #000;
+$dark: #0d0d0d;
 
 @mixin accent-gradient {
-  background: #8a2387; /* fallback for old browsers */
+  background: #12c2e9; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f27121,
-    #e94057,
-    #8a2387
+    #f64f59,
+    #c471ed,
+    #12c2e9
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f27121,
-    #e94057,
-    #8a2387
+    #f64f59,
+    #c471ed,
+    #12c2e9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin inner-wrapper {
+  width: 90%;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
 }

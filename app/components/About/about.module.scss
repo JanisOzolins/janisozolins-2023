@@ -1,6 +1,7 @@
 @import "/app/styles/variables.scss";
 
 .container {
+  @include inner-wrapper;
   & > * {
     grid-column: span 12;
   }
