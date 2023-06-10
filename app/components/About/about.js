@@ -4,7 +4,9 @@ export default function About() {
   return (
     <section id="about">
       <div className={styles.container}>
-        <h1 className={styles.title}>Hello 👋</h1>
+        <h1 className={styles.title}>
+          Hello <span className={styles.wavingHand}>👋</span>
+        </h1>
         <p>
           My name is Janis, I am a UX/UI Developer with passion for crafting
           user-centered, responsive and highly scalable digital products that
