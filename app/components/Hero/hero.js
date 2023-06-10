@@ -19,9 +19,9 @@ export default function Hero() {
       </a>
       <div id="hero" className={styles.hero}>
         <div className={styles.hero__content}>
-          <span className={styles.hero__title}>
+          <h1 className={styles.hero__title}>
             Frontend Developer with Passion for UX Design
-          </span>
+          </h1>
           <span className={styles.hero__description}>
             With over 5 years of professional experience developing and scaling
             B2B and B2C applications for large businesses, startups and
