@@ -1,0 +1,18 @@
+@import "/app/styles/variables.scss";
+
+.container {
+  & > * {
+    grid-column: span 12;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-top: 0;
+  }
+}
+
+.title {
+  font-size: $unit * 6;
+  margin-top: 0;
+}

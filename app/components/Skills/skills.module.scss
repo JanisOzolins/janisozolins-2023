@@ -1,12 +1,6 @@
 @import "/app/styles/variables.scss";
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, auto);
-  width: 90%;
-  margin: 5rem auto;
-  max-width: 1300px;
 }
 .skills {
   &__container {
