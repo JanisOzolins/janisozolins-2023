@@ -25,6 +25,10 @@ export default function About() {
           (Scaled Agile Framework). A holder of Scrum Master and SAFe
           Practitioner certificates.
         </p>
+        <p>
+          In my spare time I enjoy traveling, photography, live music shows and
+          hiking.
+        </p>
       </div>
     </section>
   );
