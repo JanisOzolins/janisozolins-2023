@@ -14,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="theme-color" content="#4285f4" />
       <body className={montserrat.className}>{children}</body>
     </html>
   );
