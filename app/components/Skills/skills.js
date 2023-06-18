@@ -11,6 +11,9 @@ export default function Skills() {
           <span className={styles.skills__pill__label}>Next.JS</span>
         </span>
         <span className={styles.skills__pill}>
+          <span className={styles.skills__pill__label}>React</span>
+        </span>
+        <span className={styles.skills__pill}>
           <span className={styles.skills__pill__label}>TypeScript</span>
         </span>
         <span className={styles.skills__pill}>
